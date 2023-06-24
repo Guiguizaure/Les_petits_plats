@@ -1,0 +1,138 @@
+main{
+    // height: 300px;
+    background: #e4e4e4;
+
+    .tag_nav{
+        padding: 20px;
+    }
+
+    .tag_selects{
+        // display: none;
+    }
+}
+
+// CARD COMPONENT
+.cards_bloc{
+
+    .recipe_card{
+        max-width: 23.75rem;
+        box-shadow: 0px 4px 34px 30px rgba(0, 0, 0, 0.04);
+        border-radius: 1.3125rem;
+    }
+
+    .recipe_image{
+        position: relative;
+
+        img{
+            width: 23.75rem;
+            height: 15rem;
+            object-fit: cover;
+            border-radius: 21px 21px 0 0;
+        }
+
+        span.prep_time{
+            display: inline-block;
+            position: absolute;
+            padding: 5px 15px;
+            font-family: $manrope;
+            font-size: .75rem;
+            line-height: 1rem;
+            color: #1B1B1B;
+            background-color: $yellow;
+            border-radius: 14px;
+            top: 23px;
+            right: 19px;
+        }
+    }
+
+
+    .content_container{
+        margin-top: -3px;
+        min-height: 23.75rem;
+        padding: 32px 25px 55px 25px;
+        background-color: #fff;
+        border-radius: 0px 0px 21px 21px;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+
+    h3.recipe_title{
+        margin-bottom: 1.875rem;
+        font-family: $anton;
+        font-size: 1.125rem;
+        line-height: 1.6875rem;
+
+    }
+    h4.recipe, h4.ingredients{
+        margin-bottom: .9375rem;
+        font-family: $manrope;
+        font-size: .75rem;
+        font-weight: 700;
+        line-height: 1rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #7A7A7A;
+    }
+
+    p.recipe_desc{
+        margin-bottom: 1.875rem;
+        font-family: $manrope;
+        font-size: .875rem;
+        line-height: 1.1875rem;
+        color: #1B1B1B;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 4; /* number of lines to show */
+                line-clamp: 4; 
+        -webkit-box-orient: vertical;
+    }
+
+    // .row{
+    //     margin-bottom: 1.25rem;
+    //     width: 100%;
+    //     display: flex;
+    // }
+    // .row:nth-last-child(1){
+    //     margin-bottom: 0;
+    // }
+    .ingredients_container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 1.25rem;
+    }
+
+    .ingredient_element{
+        // width: 50%;
+        font-family: $manrope;
+    }
+
+    .ingredient_title{
+        margin-bottom: .0625rem;
+        max-width: 9.6875rem;
+        font-size: .875rem;
+        font-weight: 500;
+        line-height: 1.1875rem;
+        color: #1B1B1B;
+    }
+    .ingredient_desc{
+        font-size: .875rem;
+        font-weight: 400;
+        line-height: 1.1875rem;
+        color: #7A7A7A;
+    }
+}
+
+//RECIPE BLOC LAYOUT
+
+.cards_bloc{
+    padding-bottom: 7.5rem;
+    @include container;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 1.25rem;
+
+    @include breakpoint (1233px){
+        justify-content: space-around;
+    }
+}

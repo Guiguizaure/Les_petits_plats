@@ -1,0 +1,26 @@
+.tag_selects{
+    display: flex;
+    .btn{
+        margin-right: 4rem;
+        position: relative;
+        display: flex;
+        width: 9.75rem;
+        padding: 1.0625rem 1.0625rem 1.0625rem 1.0625rem;
+        background: white;
+        color: #1B1B1B;
+        border: none;
+        border-radius: 11px;
+        // font: inherit;
+        cursor: pointer;
+        outline: inherit;
+
+        // span{
+        //     padding: 17px, 16px;
+        // }
+        i{
+            position: absolute;
+            top: 16px;
+            right: 14px;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+// @function rem($pxValue) {
+//     @return calc($pxValue / 16px * 1rem); 
+// }
+
+@mixin breakpoint($size) {
+    @media screen and (max-width: $size) {
+        @content;
+    }
+}
+
+@mixin breakpointUp($size) {
+    @media screen and (min-width: $size) {
+        @content;
+    }
+}
+
+@mixin breakpointBetween($sizeMin, $sizeMax) {
+    @media screen and (max-width: $sizeMax) and (min-width: $sizeMin) {
+        @content;
+    }
+}
+
+@mixin container {
+    max-width: 1205px;
+    margin: 0 auto;
+
+    //previously 1199px
+    @include breakpoint(1233px) {
+        max-width: 940px;
+    }
+
+    @include breakpoint(1023px) {
+        max-width: 600px;
+    }
+
+    @include breakpoint(639px) {
+        max-width: 90%;
+    }
+}
+
+@mixin row {
+    @include clearfix;
+    margin: 0px -10px;
+
+    @include breakpoint(small down) {
+        margin: 0;
+    }
+}
