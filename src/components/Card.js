@@ -18,6 +18,7 @@ export default class RecipeCard{
      RecipeCardDOM() {
 
       let wrapper = document.createElement("div");
+      wrapper.classList.add("card")
       // wrapper = "";
       wrapper.innerHTML =   `<div class="recipe_card" data-id="${this.id}"></div>`
 
@@ -54,17 +55,15 @@ export default class RecipeCard{
                         `;
                     });
                     
-              
 
-        
 
           elementCard += `
 
-          </div>
-          </div>
-      </div>
-  </div>
-  `;
+                    </div>
+                    </div>
+                </div>
+            </div>
+            `;
 
          
           wrapper.innerHTML = elementCard;

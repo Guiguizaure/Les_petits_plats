@@ -353,4 +353,30 @@ main .tag_nav {
         justify-content: space-around;
   }
 }
+
+.no_recipe_message {
+  max-width: 1205px;
+  margin: 0 auto;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1233px) {
+  .no_recipe_message {
+    max-width: 940px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .no_recipe_message {
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .no_recipe_message {
+    max-width: 90%;
+  }
+}
 /*# sourceMappingURL=main.css.map */

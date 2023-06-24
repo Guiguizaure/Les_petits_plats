@@ -1,7 +1,7 @@
 import { createListElements } from "../app.js"
 import RecipeCard from "../components/Card.js";
 import { recipes } from "../data/recipe.js";
-
+console.log(createListElements)
 export default class Searchbar {
     constructor(){
        this.searchbar = document.querySelector('#search-input')
@@ -13,7 +13,6 @@ export default class Searchbar {
 
     globalSearchInput(value) {
         value.addEventListener("input", (e) => {
-            // console.log(this.searchbar.value.toLowerCase())
             let researchToLowerCase = this.searchbar.value.toLowerCase();
         
             //
@@ -37,7 +36,8 @@ export default class Searchbar {
          } else if (
             e.target.value.length < 3 
             ) {
-            const recipeCard = document.querySelectorAll(".recipe_card");
+            const recipeCard = document.querySelectorAll(".card");
+            
             if (recipeCard.length) {
                 recipeCard.forEach((element) => {
                 element.remove();
@@ -53,8 +53,6 @@ export default class Searchbar {
                 item.remove();
             });
             createListElements();
-            // filterListTagsbyInputTag();
-            // createMiniTags();
             }
         });
     }
@@ -62,16 +60,16 @@ export default class Searchbar {
 
     createCardRecipesInput(results) {
         // show/hide message no recipes
-        // const MessageNoRecette = document.querySelector(".message-no-recette");
-        // if (results.length === 0) {
-        //     MessageNoRecette.style.display = "block";
-        // } else {
-        //     MessageNoRecette.style.display = "none";
-        // }
+        const MessageNoRecette = document.querySelector(".no_recipe_message");
+        if (results.length === 0) {
+            MessageNoRecette.style.display = "block";
+        } else {
+            MessageNoRecette.style.display = "none";
+        }
         
         // delete all cards
-        const cardRecipe = document.querySelectorAll(".card-recipe");
-        cardRecipe.forEach((item) => {
+        const recipeCard = document.querySelectorAll(".card");
+        recipeCard.forEach((item) => {
             item.remove();
         });
         
@@ -86,7 +84,7 @@ export default class Searchbar {
 
          // remove all items from the lists
         const listAllItems = document.querySelectorAll(".search-item");
-        console.log(listAllItems)
+        // console.log(listAllItems)
         listAllItems.forEach((item) => {
             item.remove();
         });

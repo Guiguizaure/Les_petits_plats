@@ -136,3 +136,12 @@ main{
         justify-content: space-around;
     }
 }
+
+
+//No recipe message
+.no_recipe_message{
+    @include container;
+    font-family: $manrope;
+    font-size: 18px;
+    text-align: center;
+}
