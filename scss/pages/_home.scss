@@ -128,9 +128,10 @@ main{
     padding-bottom: 7.5rem;
     @include container;
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     flex-wrap: wrap;
     row-gap: 1.25rem;
+    column-gap: 2rem;
 
     @include breakpoint (1233px){
         justify-content: space-around;

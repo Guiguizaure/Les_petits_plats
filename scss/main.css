@@ -321,12 +321,11 @@ main .tag_nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   row-gap: 1.25rem;
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
 }
 
 @media screen and (max-width: 1233px) {
