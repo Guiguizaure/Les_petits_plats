@@ -355,6 +355,7 @@ main .tag_nav {
 }
 
 .no_recipe_message {
+  display: none;
   max-width: 1205px;
   margin: 0 auto;
   font-family: "Manrope", sans-serif;

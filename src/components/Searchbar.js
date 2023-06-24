@@ -1,7 +1,7 @@
 import { createListElements } from "../app.js"
 import RecipeCard from "../components/Card.js";
 import { recipes } from "../data/recipe.js";
-console.log(createListElements)
+
 export default class Searchbar {
     constructor(){
        this.searchbar = document.querySelector('#search-input')

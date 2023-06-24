@@ -140,6 +140,7 @@ main{
 
 //No recipe message
 .no_recipe_message{
+    display: none;
     @include container;
     font-family: $manrope;
     font-size: 18px;
