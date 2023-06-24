@@ -7,7 +7,7 @@ import { recipes } from "./data/recipe.js";
 let searchbar = new Searchbar();
 searchbar.initSearchbar();
 
-
+console.log("hellow")
 
 
 // get all elements to create tag lists ingredients/appliance/ustensils
