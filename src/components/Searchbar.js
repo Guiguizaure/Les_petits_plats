@@ -21,8 +21,10 @@ export default class Searchbar {
             if (e.target.value.length > 2) {
             let results = recipes.filter((obj) => {
                 return (
+                //check if input keyword is is found in recipe's name and description
                 obj.name.toLowerCase().includes(researchToLowerCase) ||
                 obj.description.toLowerCase().includes(researchToLowerCase) ||
+                //check if input keyword is is found in ingredients
                 obj.ingredients.find((ingredient) =>
                     ingredient.ingredient.toLowerCase().includes(researchToLowerCase)
                 )

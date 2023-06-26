@@ -1,18 +1,19 @@
 main{
-    // height: 300px;
+    height: 100%;
     background: #e4e4e4;
 
     .tag_nav{
-        padding: 20px;
+        padding: 20px 0 55px 0;
     }
 
-    .tag_selects{
-        // display: none;
-    }
+    // .tag_selects{
+    //     // display: none;
+    // }
 }
 
 // CARD COMPONENT
 .cards_bloc{
+    // height: 50vh;
 
     .recipe_card{
         max-width: 23.75rem;
@@ -146,4 +147,5 @@ main{
     font-family: $manrope;
     font-size: 18px;
     text-align: center;
+    padding: 30px;
 }

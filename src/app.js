@@ -1,3 +1,4 @@
+import TagFilters from "./components/TagFilters.js";
 import Searchbar from "./components/Searchbar.js";
 import RecipeCard from "./components/Card.js";
 import listsDOM from "./components/lists.js";
@@ -6,6 +7,10 @@ import { recipes } from "./data/recipe.js";
 
 let searchbar = new Searchbar();
 searchbar.initSearchbar();
+
+let tagFilters = new TagFilters();
+tagFilters.initTagFilters();
+
 
 console.log("hellow")
 
@@ -60,9 +65,10 @@ export function createListElements() {
   
   myIngredientsTags.forEach((element) => {
     const searchlistIngredients = document.querySelector(
-      ".search-list-ingredients"
+      ".tag_list_ingredients"
     );
     const domIngredients = listsDOM(element, "ingredients");
+    // console.log()
     searchlistIngredients.append(domIngredients);
   });
 
@@ -73,7 +79,7 @@ export function createListElements() {
   let myappliancesTags = getElementsInRecipes(recipes, "appliance");
   myappliancesTags.forEach((element) => {
     const searchListappliances = document.querySelector(
-      ".search-list-appliances"
+      ".tag_list_appliances"
     );
     const domAppliance = listsDOM(element, "appliances");
     searchListappliances.append(domAppliance);
@@ -86,7 +92,7 @@ export function createListElements() {
   const myUstensilsTags = getElementsInRecipes(recipes, "ustensils");
   myUstensilsTags.forEach((element) => {
     const searchlistUstensils = document.querySelector(
-      ".search-list-ustensils"
+      ".tag_list_ustensils"
     );
     const domUstensils = listsDOM(element, "ustensils");
     searchlistUstensils.append(domUstensils);
@@ -108,3 +114,6 @@ function createCardRecipes() {
 
 createListElements();
 createCardRecipes();
+
+
+
