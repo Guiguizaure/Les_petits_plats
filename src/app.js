@@ -1,3 +1,4 @@
+import filterListTagsbyInputTag from "./components/filterInputTags.js";
 import TagFilters from "./components/TagFilters.js";
 import Searchbar from "./components/Searchbar.js";
 import RecipeCard from "./components/Card.js";
@@ -10,6 +11,11 @@ searchbar.initSearchbar();
 
 let tagFilters = new TagFilters();
 tagFilters.initTagFilters();
+
+// const listItemIngredients = document.getElementsByClassName(
+//   "card"
+// );
+// console.log(listItemIngredients)
 
 
 console.log("hellow")
@@ -114,6 +120,7 @@ function createCardRecipes() {
 
 createListElements();
 createCardRecipes();
+filterListTagsbyInputTag();
 
 
 

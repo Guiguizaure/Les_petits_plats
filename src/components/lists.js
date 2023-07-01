@@ -1,7 +1,7 @@
 export default function listsDOM(item, element) {
     const wrapper = document.createElement("li");
-    wrapper.classList.add(`search-item`);
-    wrapper.classList.add(`search-item-${element}`);
+    wrapper.classList.add(`tag_item`);
+    wrapper.classList.add(`tag_item_${element}`);
     // wrapper.setAttribute("data-value", `${item.toLowerCase()}`);
     wrapper.innerText = item.charAt(0).toUpperCase() + item.slice(1);
   
