@@ -1,8 +1,8 @@
 
-const inputResearch = document.getElementById("search-input");
+const inputResearch = document.getElementById('search-input');
 
 function globalSearchInput(value) {
-  value.addEventListener("input", (e) => {
+  value.addEventListener('input', (e) => {
     let researchToLowerCase = inputResearch.value.toLowerCase();
     //
     // filter inputs and minitags
@@ -10,7 +10,7 @@ function globalSearchInput(value) {
 
     // Case: Input length > 2 and no mini tags selected
     if (e.target.value.length > 2 && finalResultTotalMiniTags.length === 0) {
-      results = [];
+      let results = [];
       for (let i = 0; i < recipes.length; i++) {
         let obj = recipes[i];
         if (
@@ -41,7 +41,7 @@ function globalSearchInput(value) {
         for (let j = 0; j < results.length; j++) {
           let obj = results[j];
           switch (item.datavalue) {
-            case "ingredients":
+            case 'ingredients':
               if (
                 obj.ingredients.some(
                   (ingredient) =>
@@ -51,12 +51,12 @@ function globalSearchInput(value) {
                 filteredResults.push(obj);
               }
               break;
-            case "appliance":
+            case 'appliance':
               if (obj.appliance.toLowerCase() === item.value) {
                 filteredResults.push(obj);
               }
               break;
-            case "ustensils":
+            case 'ustensils':
               if (
                 obj.ustensils.some(
                   (ustensil) => ustensil.toLowerCase() === item.value
@@ -104,7 +104,7 @@ function globalSearchInput(value) {
         for (let j = 0; j < results.length; j++) {
           let obj = results[j];
           switch (item.datavalue) {
-            case "ingredients":
+            case 'ingredients':
               if (
                 obj.ingredients.some(
                   (ingredient) =>
@@ -114,12 +114,12 @@ function globalSearchInput(value) {
                 filteredResults.push(obj);
               }
               break;
-            case "appliance":
+            case 'appliance':
               if (obj.appliance.toLowerCase() === item.value) {
                 filteredResults.push(obj);
               }
               break;
-            case "ustensils":
+            case 'ustensils':
               if (
                 obj.ustensils.some(
                   (ustensil) => ustensil.toLowerCase() === item.value
@@ -173,7 +173,7 @@ function globalSearchInput(value) {
       e.target.value.length < 3 &&
       finalResultTotalMiniTags.length === 0
     ) {
-      const cardRecipe = document.querySelectorAll(".card");
+      const cardRecipe = document.querySelectorAll('.card');
       if (cardRecipe.length) {
         for (let i = 0; i < cardRecipe.length; i++) {
           let element = cardRecipe[i];
@@ -185,7 +185,7 @@ function globalSearchInput(value) {
       createCardRecipesInput(recipes);
 
       // remove all items from the lists
-      const listAllItems = document.querySelectorAll(".tag_item");
+      const listAllItems = document.querySelectorAll('.tag_item');
       for (let i = 0; i < listAllItems.length; i++) {
         let item = listAllItems[i];
         item.remove();
@@ -202,21 +202,21 @@ function globalSearchInput(value) {
 
 function createCardRecipesInput(results) {
   // show/hide message no recipes
-  const MessageNoRecette = document.querySelector(".no_recipe_message");
+  const MessageNoRecette = document.querySelector('.no_recipe_message');
   if (results.length === 0) {
-    MessageNoRecette.style.display = "block";
+    MessageNoRecette.style.display = 'block';
   } else {
-    MessageNoRecette.style.display = "none";
+    MessageNoRecette.style.display = 'none';
   }
 
   // delete all cards
-  const cardRecipe = document.querySelectorAll(".card");
+  const cardRecipe = document.querySelectorAll('.card');
   cardRecipe.forEach((item) => {
     item.remove();
   });
 
   // create new cards
-  const rowCardsRecipes = document.querySelector(".cards_bloc");
+  const rowCardsRecipes = document.querySelector('.cards_bloc');
   results.forEach((recipe) => {
     const cardRecipeModel = recipeCard(recipe);
     const recipeCardDOM = cardRecipeModel.recipeCardDOM();
@@ -245,7 +245,7 @@ function populateTags(results) {
   });
 
   // remove all items from the lists
-  const listAllItems = document.querySelectorAll(".tag_item");
+  const listAllItems = document.querySelectorAll('.tag_item');
   listAllItems.forEach((item) => {
     item.remove();
   });
@@ -253,9 +253,9 @@ function populateTags(results) {
   // remove ingredients from tag ingredient
   reducedIngredient.forEach((element) => {
     const searchlistIngredients = document.querySelector(
-      ".tag_list_ingredients"
+      '.tag_list_ingredients'
     );
-    const domIngredients = listsDOM(element, "ingredients");
+    const domIngredients = listsDOM(element, 'ingredients');
     searchlistIngredients.append(domIngredients);
   });
 
@@ -274,9 +274,9 @@ function populateTags(results) {
   // remove appliances from de tag appliance
   reducedAppliance.forEach((element) => {
     const searchListappliances = document.querySelector(
-      ".tag_list_appliances"
+      '.tag_list_appliances'
     );
-    const domAppliance = listsDOM(element, "appliances");
+    const domAppliance = listsDOM(element, 'appliances');
     searchListappliances.append(domAppliance);
   });
 
@@ -294,9 +294,9 @@ function populateTags(results) {
   // remove ustensils from de tag appliance
   reducedUstensils.forEach((element) => {
     const searchListUstensils = document.querySelector(
-      ".tag_list_ustensils"
+      '.tag_list_ustensils'
     );
-    const domUstensils = listsDOM(element, "ustensils");
+    const domUstensils = listsDOM(element, 'ustensils');
     searchListUstensils.append(domUstensils);
   });
 }
