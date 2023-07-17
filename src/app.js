@@ -1,24 +1,3 @@
-import filterListTagsbyInputTag from "./components/filterInputTags.js";
-import TagFilters from "./components/TagFilters.js";
-import Searchbar from "./components/Searchbar.js";
-import RecipeCard from "./components/Card.js";
-import listsDOM from "./components/lists.js";
-// import TagFilters from "./components/TagFilters.js";
-import { recipes } from "./data/recipe.js";
-
-let searchbar = new Searchbar();
-searchbar.initSearchbar();
-
-let tagFilters = new TagFilters();
-tagFilters.initTagFilters();
-
-// const listItemIngredients = document.getElementsByClassName(
-//   "card"
-// );
-// console.log(listItemIngredients)
-
-
-console.log("hellow")
 
 
 // get all elements to create tag lists ingredients/appliance/ustensils
@@ -62,7 +41,7 @@ function getElementsInRecipes(recipes, elementToGet) {
 
 
 //create list elements for ingredients/appliances/ustensils
-export function createListElements() {
+function createListElements() {
   //  Create list
   //  elements for
   //  ingredients
@@ -107,20 +86,23 @@ export function createListElements() {
 }
 
 
+//Create
+//Cards
+//recettes
+
 function createCardRecipes() {
   const ingredientsContainer = document.querySelector(".cards_bloc");
 
   recipes.forEach((recipe) => {
-    const cardRecipeModel = new RecipeCard(recipe);
-    const recipeCardDOM = cardRecipeModel.RecipeCardDOM();
+    const cardRecipeModel = recipeCard(recipe);
+    const recipeCardDOM = cardRecipeModel.recipeCardDOM();
     ingredientsContainer.appendChild(recipeCardDOM);
   });
 }
 
-
 createListElements();
 createCardRecipes();
-filterListTagsbyInputTag();
+// filterListTagsbyInputTag();
 
 
 

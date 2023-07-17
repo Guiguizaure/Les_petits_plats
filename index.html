@@ -62,12 +62,10 @@
     </header>
 
     <main>
-        <section id="mini-tags" class=""></section>
-
         <nav class="tag_nav container">
             <div class="tag_selects">
                 <!-- first tag ingredients  -->
-                <div class="tag_wrapper_ingredients">
+                <div class="tag_wrapper_ingredients tag_control">
                     <div class="tag_control_ingredients">
                         
                         <label for="ingredients">Ingredients</label>
@@ -77,7 +75,7 @@
                     </div>
                     <!-- list ingredients  -->
                     <div class="tag_list_block_ingredients">
-                        <input type="text" name="ingredients" id="ingredients" class="hide"
+                        <input type="text" name="ingredients" id="ingredients"
                             placeholder="" autocomplete="off">
                         <ul class="tag_list_ingredients">
 
@@ -86,7 +84,7 @@
                 </div>
 
                 <!-- second tag appareil  -->
-                <div class="tag_wrapper_appliances">
+                <div class="tag_wrapper_appliances tag_control">
                     <div class="tag_control_appliances">
                         
                         <label for="appliances">Appareil</label>
@@ -96,7 +94,7 @@
                     </div>
                     <!-- list appliances  -->
                     <div class="tag_list_block_appliances">
-                        <input type="text" name="appliances" id="appliances" class="hide"
+                        <input type="text" name="appliances" id="appliances"
                             placeholder="" autocomplete="off">
                         <ul class="tag_list_appliances">
 
@@ -104,7 +102,7 @@
                     </div>
                 </div>
                 <!-- third tag ustensils  -->
-                <div class="tag_wrapper_ustensils">
+                <div class="tag_wrapper_ustensils tag_control">
                     <div class="tag_control_ustensils">
                         
                         <label for="ustensils">Ustensils</label>
@@ -114,7 +112,7 @@
                     </div>
                     <!-- list ustensils  -->
                     <div class="tag_list_block_ustensils">
-                        <input type="text" name="ustensils" id="ustensils" class="hide"
+                        <input type="text" name="ustensils" id="ustensils"
                             placeholder="" autocomplete="off">
                         <ul class="tag_list_ustensils"></ul>
                     </div>
@@ -124,6 +122,8 @@
 
             </div>
         </nav>
+
+        <section id="mini-tags" class=""></section>
 
         <section class="no_recipe_message">
             <p>
@@ -185,6 +185,26 @@
         </section>
     </main>
     
-    <script src="src/app.js" type="module"></script>
+    <!-- <script src="src/app.js" type=""></script> -->
+
+     <!-- factories  -->
+     <script src="./src/factories/lists.js"></script>
+     <script src="./src/factories/Card.js"></script>
+     <script src="./src/factories/miniTagsDOM.js"></script>
+ 
+     <!-- data recipes  -->
+     <script src="./src/data/recipe.js"></script>
+ 
+     <!-- main app  -->
+     <script src="./src/app.js"></script>
+ 
+     <!-- tools  -->
+     <script src="./src/components/reset.js"></script>
+     <script src="./src/components/recipeCount.js"></script>
+     <script src="./src/components/openTags.js"></script>
+     <script src="./src/components/Searchbar.js"></script>
+     <script src="./src/components/miniTags.js"></script>
+     <script src="./src/components/TagFilters.js"></script>
+     <script src="./src/components/filterInputTags.js"></script>
 </body>
 </html>

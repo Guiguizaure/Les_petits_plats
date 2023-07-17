@@ -2,7 +2,7 @@
  list 
  tags */
 
- export default function filterListTagsbyInputTag() {
+function filterListTagsbyInputTag() {
     //  html elements ingredients
     const inputIngredients = document.getElementById("ingredients");
     const listItemIngredients = document.querySelectorAll(
@@ -67,5 +67,5 @@
       }
     };
   }
-//   filterListTagsbyInputTag();
-  // createMiniTags();
+  filterListTagsbyInputTag();
+  createMiniTags();

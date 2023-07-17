@@ -1,86 +1,86 @@
 .tag_selects {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    font-family: $manrope;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: $manrope;
 
-    label{
-        pointer-events: none;
-    }
+  label{
+      pointer-events: none;
   }
-  .tag_selects .tag_wrapper_ingredients,
-  .tag_selects .tag_wrapper_appliances,
-  .tag_selects .tag_wrapper_ustensils {
-    display: flex;
-    align-items: center;
-    position: relative;
-    width: 179px;
-    border-radius: 11px;
-    margin-right: 20px;
-    background: white;
-    color: black;
-    transition: width 0.2s ease-in-out;
-    cursor: pointer;
-  }
-  .tag_selects .tag_wrapper_ingredients .tag_control_ingredients,
-  .tag_selects .tag_wrapper_ingredients .tag_control_appliances,
-  .tag_selects .tag_wrapper_ingredients .tag_control_ustensils,
-  .tag_selects .tag_wrapper_appliances .tag_control_ingredients,
-  .tag_selects .tag_wrapper_appliances .tag_control_appliances,
-  .tag_selects .tag_wrapper_appliances .tag_control_ustensils,
-  .tag_selects .tag_wrapper_ustensils .tag_control_ingredients,
-  .tag_selects .tag_wrapper_ustensils .tag_control_appliances,
-  .tag_selects .tag_wrapper_ustensils .tag_control_ustensils {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    padding: 20px;
-    font-size: 16px;
+}
+.tag_selects .tag_wrapper_ingredients,
+.tag_selects .tag_wrapper_appliances,
+.tag_selects .tag_wrapper_ustensils {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 179px;
+  border-radius: 11px;
+  margin-right: 20px;
+  background: white;
+  color: black;
+  transition: width 0.2s ease-in-out;
+  cursor: pointer;
+}
+.tag_selects .tag_wrapper_ingredients .tag_control_ingredients,
+.tag_selects .tag_wrapper_ingredients .tag_control_appliances,
+.tag_selects .tag_wrapper_ingredients .tag_control_ustensils,
+.tag_selects .tag_wrapper_appliances .tag_control_ingredients,
+.tag_selects .tag_wrapper_appliances .tag_control_appliances,
+.tag_selects .tag_wrapper_appliances .tag_control_ustensils,
+.tag_selects .tag_wrapper_ustensils .tag_control_ingredients,
+.tag_selects .tag_wrapper_ustensils .tag_control_appliances,
+.tag_selects .tag_wrapper_ustensils .tag_control_ustensils {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  padding: 20px;
+  font-size: 16px;
 
-  }
-  .tag_selects .tag_wrapper_ingredients .close_dropdown_ingredients,
-  .tag_selects .tag_wrapper_ingredients .close_dropdown_appliances,
-  .tag_selects .tag_wrapper_ingredients .close_dropdown_ustensils,
-  .tag_selects .tag_wrapper_appliances .close_dropdown_ingredients,
-  .tag_selects .tag_wrapper_appliances .close_dropdown_appliances,
-  .tag_selects .tag_wrapper_appliances .close_dropdown_ustensils,
-  .tag_selects .tag_wrapper_ustensils .close_dropdown_ingredients,
-  .tag_selects .tag_wrapper_ustensils .close_dropdown_appliances,
-  .tag_selects .tag_wrapper_ustensils .close_dropdown_ustensils {
-    transition: all 0.2s ease-in-out;
-    margin: 0 10px;
-    z-index: 600;
-    cursor: pointer;
-    padding: 10px;
-  }
-  .tag_selects .tag_wrapper_ingredients .ingredients-text,
-  .tag_selects .tag_wrapper_ingredients .appliances-text,
-  .tag_selects .tag_wrapper_ingredients .ustensils-text,
-  .tag_selects .tag_wrapper_appliances .ingredients-text,
-  .tag_selects .tag_wrapper_appliances .appliances-text,
-  .tag_selects .tag_wrapper_appliances .ustensils-text,
-  .tag_selects .tag_wrapper_ustensils .ingredients-text,
-  .tag_selects .tag_wrapper_ustensils .appliances-text,
-  .tag_selects .tag_wrapper_ustensils .ustensils-text {
-    pointer-events: none;
-  }
-  .tag_selects .tag_wrapper_ingredients input,
-  .tag_selects .tag_wrapper_appliances input,
-  .tag_selects .tag_wrapper_ustensils input {
-    position: relative;
-    margin: 10px;
-    background: transparent;
-    background-image: url("/assets/loupe-grey.svg");
-    background-repeat: no-repeat;
-    background-position-x: 95%;
-    background-position-y: 7px;
-    background-size: 12px;
-    z-index: 200;
-    padding: 6px;
-    border: 1px solid #C6C6C6;
-    color: #7A7A7A;
-  }
+}
+.tag_selects .tag_wrapper_ingredients .close_dropdown_ingredients,
+.tag_selects .tag_wrapper_ingredients .close_dropdown_appliances,
+.tag_selects .tag_wrapper_ingredients .close_dropdown_ustensils,
+.tag_selects .tag_wrapper_appliances .close_dropdown_ingredients,
+.tag_selects .tag_wrapper_appliances .close_dropdown_appliances,
+.tag_selects .tag_wrapper_appliances .close_dropdown_ustensils,
+.tag_selects .tag_wrapper_ustensils .close_dropdown_ingredients,
+.tag_selects .tag_wrapper_ustensils .close_dropdown_appliances,
+.tag_selects .tag_wrapper_ustensils .close_dropdown_ustensils {
+  transition: all 0.2s ease-in-out;
+  margin: 0 10px;
+  z-index: 600;
+  cursor: pointer;
+  padding: 10px;
+}
+.tag_selects .tag_wrapper_ingredients .ingredients-text,
+.tag_selects .tag_wrapper_ingredients .appliances-text,
+.tag_selects .tag_wrapper_ingredients .ustensils-text,
+.tag_selects .tag_wrapper_appliances .ingredients-text,
+.tag_selects .tag_wrapper_appliances .appliances-text,
+.tag_selects .tag_wrapper_appliances .ustensils-text,
+.tag_selects .tag_wrapper_ustensils .ingredients-text,
+.tag_selects .tag_wrapper_ustensils .appliances-text,
+.tag_selects .tag_wrapper_ustensils .ustensils-text {
+  pointer-events: none;
+}
+.tag_selects .tag_wrapper_ingredients input,
+.tag_selects .tag_wrapper_appliances input,
+.tag_selects .tag_wrapper_ustensils input {
+  position: relative;
+  margin: 10px;
+  background: transparent;
+  background-image: url("/assets/loupe-grey.svg");
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+  background-position-y: 7px;
+  background-size: 12px;
+  z-index: 200;
+  padding: 6px;
+  border: 1px solid #C6C6C6;
+  color: #7A7A7A;
+}
 //   .tag_selects .tag_wrapper_ingredients input::-webkit-input-placeholder,
 //   .tag_selects .tag_wrapper_appliances input::-webkit-input-placeholder,
 //   .tag_selects .tag_wrapper_ustensils input::-webkit-input-placeholder {
@@ -120,110 +120,146 @@
 //   .tag_selects .tag_wrapper_ustensils .tag_list_block_ustensils {
 //     background-color: #ed6454;
 //   }
-  .tag_selects .tag_wrapper_ingredients .tag_list_block_ingredients,
-  .tag_selects .tag_wrapper_ingredients .tag_list_block_appliances,
-  .tag_selects .tag_wrapper_ingredients .tag_list_block_ustensils,
-  .tag_selects .tag_wrapper_appliances .tag_list_block_ingredients,
-  .tag_selects .tag_wrapper_appliances .tag_list_block_appliances,
-  .tag_selects .tag_wrapper_appliances .tag_list_block_ustensils,
-  .tag_selects .tag_wrapper_ustensils .tag_list_block_ingredients,
-  .tag_selects .tag_wrapper_ustensils .tag_list_block_appliances,
-  .tag_selects .tag_wrapper_ustensils .tag_list_block_ustensils {
-    position: absolute;
-    top: 45px;
-    left: 0;
-    z-index: 200;
-    // width: 179px;
-    // padding: 10px;
-    max-height: 360px;
-    overflow-y: auto;
-    transition: width 0.2s ease-in-out;
-    font-size: 14px;
-    border-radius: 0 0 11px 11px;
-  }
-  .tag_selects .tag_wrapper_ingredients .tag_list_block_ingredients,
-  .tag_selects .tag_wrapper_appliances .tag_list_block_ingredients,
-  .tag_selects .tag_wrapper_ustensils .tag_list_block_ingredients {
-    display: none;
-    background-color: white;
-    scrollbar-color: #053b8b #3282f7;
-    scrollbar-width: thin;
-  }
-  .tag_selects .tag_wrapper_ingredients .tag_list_block_appliances,
-  .tag_selects .tag_wrapper_appliances .tag_list_block_appliances,
-  .tag_selects .tag_wrapper_ustensils .tag_list_block_appliances {
-    display: none;
-    background-color: white;
-    scrollbar-color: #228657 #68D9A4;
-    scrollbar-width: thin;
-  }
-  .tag_selects .tag_wrapper_ingredients .tag_list_block_ustensils,
-  .tag_selects .tag_wrapper_appliances .tag_list_block_ustensils,
-  .tag_selects .tag_wrapper_ustensils .tag_list_block_ustensils {
-    display: none;
-    background-color: white;
-    scrollbar-color: #981e10 #ed6454;
-    scrollbar-width: thin;
-  }
+.tag_selects .tag_wrapper_ingredients .tag_list_block_ingredients,
+.tag_selects .tag_wrapper_ingredients .tag_list_block_appliances,
+.tag_selects .tag_wrapper_ingredients .tag_list_block_ustensils,
+.tag_selects .tag_wrapper_appliances .tag_list_block_ingredients,
+.tag_selects .tag_wrapper_appliances .tag_list_block_appliances,
+.tag_selects .tag_wrapper_appliances .tag_list_block_ustensils,
+.tag_selects .tag_wrapper_ustensils .tag_list_block_ingredients,
+.tag_selects .tag_wrapper_ustensils .tag_list_block_appliances,
+.tag_selects .tag_wrapper_ustensils .tag_list_block_ustensils {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  z-index: 200;
+  // width: 179px;
+  // padding: 10px;
+  max-height: 360px;
+  overflow-y: auto;
+  transition: width 0.2s ease-in-out;
+  font-size: 14px;
+  border-radius: 0 0 11px 11px;
+}
+.tag_selects .tag_wrapper_ingredients .tag_list_block_ingredients,
+.tag_selects .tag_wrapper_appliances .tag_list_block_ingredients,
+.tag_selects .tag_wrapper_ustensils .tag_list_block_ingredients {
+  display: none;
+  background-color: white;
+  scrollbar-color: #053b8b #3282f7;
+  scrollbar-width: thin;
+}
+.tag_selects .tag_wrapper_ingredients .tag_list_block_appliances,
+.tag_selects .tag_wrapper_appliances .tag_list_block_appliances,
+.tag_selects .tag_wrapper_ustensils .tag_list_block_appliances {
+  display: none;
+  background-color: white;
+  scrollbar-color: #228657 #68D9A4;
+  scrollbar-width: thin;
+}
+.tag_selects .tag_wrapper_ingredients .tag_list_block_ustensils,
+.tag_selects .tag_wrapper_appliances .tag_list_block_ustensils,
+.tag_selects .tag_wrapper_ustensils .tag_list_block_ustensils {
+  display: none;
+  background-color: white;
+  scrollbar-color: #981e10 #ed6454;
+  scrollbar-width: thin;
+}
 
-  .tag_selects .tag_wrapper_ingredients .tag_list_block_ingredients.active,
-  .tag_selects .tag_wrapper_appliances .tag_list_block_ingredients.active,
-  .tag_selects .tag_wrapper_ustensils .tag_list_block_ingredients.active {
-    display: block;
-  }
-  .tag_selects .tag_wrapper_ingredients .tag_list_block_appliances.active,
-  .tag_selects .tag_wrapper_appliances .tag_list_block_appliances.active,
-  .tag_selects .tag_wrapper_ustensils .tag_list_block_appliances.active {
-    display: block;
-  }
-  .tag_selects .tag_wrapper_ingredients .tag_list_block_ustensils.active,
-  .tag_selects .tag_wrapper_appliances .tag_list_block_ustensils.active,
-  .tag_selects .tag_wrapper_ustensils .tag_list_block_ustensils.active {
-    display: block;
-  }
+.tag_selects .tag_wrapper_ingredients .tag_list_block_ingredients.active,
+.tag_selects .tag_wrapper_appliances .tag_list_block_ingredients.active,
+.tag_selects .tag_wrapper_ustensils .tag_list_block_ingredients.active {
+  display: block;
+}
+.tag_selects .tag_wrapper_ingredients .tag_list_block_appliances.active,
+.tag_selects .tag_wrapper_appliances .tag_list_block_appliances.active,
+.tag_selects .tag_wrapper_ustensils .tag_list_block_appliances.active {
+  display: block;
+}
+.tag_selects .tag_wrapper_ingredients .tag_list_block_ustensils.active,
+.tag_selects .tag_wrapper_appliances .tag_list_block_ustensils.active,
+.tag_selects .tag_wrapper_ustensils .tag_list_block_ustensils.active {
+  display: block;
+}
 //   .active{
 //     display: block;
 //   }
 
-  .tag_selects .tag_wrapper_ingredients .tag_list_ingredients,
-  .tag_selects .tag_wrapper_ingredients .tag_list_appliances,
-  .tag_selects .tag_wrapper_ingredients .tag_list_ustensils,
-  .tag_selects .tag_wrapper_appliances .tag_list_ingredients,
-  .tag_selects .tag_wrapper_appliances .tag_list_appliances,
-  .tag_selects .tag_wrapper_appliances .tag_list_ustensils,
-  .tag_selects .tag_wrapper_ustensils .tag_list_ingredients,
-  .tag_selects .tag_wrapper_ustensils .tag_list_appliances,
-  .tag_selects .tag_wrapper_ustensils .tag_list_ustensils {
-    width: 100%;
-    margin-right: 40px;
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  .tag_selects .tag_wrapper_ingredients .expand-search-list,
-  .tag_selects .tag_wrapper_appliances .expand-search-list,
-  .tag_selects .tag_wrapper_ustensils .expand-search-list {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  .tag_selects .tag_wrapper_ingredients ul,
-  .tag_selects .tag_wrapper_appliances ul,
-  .tag_selects .tag_wrapper_ustensils ul {
-    list-style: none;
-    padding: 0px;
-  }
-  .tag_selects .tag_wrapper_ingredients ul li,
-  .tag_selects .tag_wrapper_appliances ul li,
-  .tag_selects .tag_wrapper_ustensils ul li {
-    padding: 10px;
-    margin-bottom: 10px;
-    display: inline;
-    cursor: pointer;
+.tag_selects .tag_wrapper_ingredients .tag_list_ingredients,
+.tag_selects .tag_wrapper_ingredients .tag_list_appliances,
+.tag_selects .tag_wrapper_ingredients .tag_list_ustensils,
+.tag_selects .tag_wrapper_appliances .tag_list_ingredients,
+.tag_selects .tag_wrapper_appliances .tag_list_appliances,
+.tag_selects .tag_wrapper_appliances .tag_list_ustensils,
+.tag_selects .tag_wrapper_ustensils .tag_list_ingredients,
+.tag_selects .tag_wrapper_ustensils .tag_list_appliances,
+.tag_selects .tag_wrapper_ustensils .tag_list_ustensils {
+  width: 100%;
+  margin-right: 40px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.tag_selects .tag_wrapper_ingredients .expand-search-list,
+.tag_selects .tag_wrapper_appliances .expand-search-list,
+.tag_selects .tag_wrapper_ustensils .expand-search-list {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.tag_selects .tag_wrapper_ingredients ul,
+.tag_selects .tag_wrapper_appliances ul,
+.tag_selects .tag_wrapper_ustensils ul {
+  list-style: none;
+  padding: 0px;
+}
+.tag_selects .tag_wrapper_ingredients ul li,
+.tag_selects .tag_wrapper_appliances ul li,
+.tag_selects .tag_wrapper_ustensils ul li {
+  padding: 10px;
+  margin-bottom: 10px;
+  display: inline;
+  cursor: pointer;
 
-    &:hover{
-        background: #FFD15B;
-    }
+  &:hover{
+      background: #FFD15B;
   }
+}
 
-  .arrow-down-open {
-    transition: 150ms ease-in-out;
-    transform: rotateX(180deg);
-  }
+.arrow-down-open {
+  transition: 150ms ease-in-out;
+  transform: rotateX(180deg);
+}
+
+
+//mini-tags
+
+#mini-tags{
+margin-top: 20px;
+@include container;
+display: flex;
+flex-wrap: wrap;
+row-gap: 10px;
+column-gap: 20px;
+}
+.tag-button{
+// margin-right: 20px;
+display: flex;
+align-items: center;
+justify-content: space-around;
+position: relative;
+
+width: 179px;
+padding: 20px 0;
+border: none;
+border-radius: 11px;
+background: $yellow;
+font-size: 14px;
+font-weight: 400;
+color: black;
+transition: width 0.2s ease-in-out;
+pointer-events: none;
+
+.fa-xmark{
+  font-size: 16px;
+  cursor: pointer;
+  pointer-events: auto;
+}
+}

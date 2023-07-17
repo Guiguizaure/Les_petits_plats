@@ -3,17 +3,26 @@ main{
     background: #e4e4e4;
 
     .tag_nav{
-        padding: 20px 0 55px 0;
+        padding: 20px 0 20px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .recipe_number{
+            color: #1B1B1B;
+            font-size: 21px;
+            font-family: $anton;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
     }
-
-    // .tag_selects{
-    //     // display: none;
-    // }
 }
-
-// CARD COMPONENT
+.hide{
+    display: none;
+}
+/* CARD COMPONENT */
 .cards_bloc{
-    // height: 50vh;
 
     .recipe_card{
         max-width: 23.75rem;
@@ -88,14 +97,6 @@ main{
         -webkit-box-orient: vertical;
     }
 
-    // .row{
-    //     margin-bottom: 1.25rem;
-    //     width: 100%;
-    //     display: flex;
-    // }
-    // .row:nth-last-child(1){
-    //     margin-bottom: 0;
-    // }
     .ingredients_container{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -103,7 +104,6 @@ main{
     }
 
     .ingredient_element{
-        // width: 50%;
         font-family: $manrope;
     }
 
@@ -123,13 +123,13 @@ main{
     }
 }
 
-//RECIPE BLOC LAYOUT
+/* RECIPE BLOC LAYOUT */
 
 .cards_bloc{
     padding-bottom: 7.5rem;
     @include container;
+    margin-top: 40px;
     display: flex;
-    // justify-content: space-between;
     flex-wrap: wrap;
     row-gap: 1.25rem;
     column-gap: 2rem;
@@ -140,7 +140,7 @@ main{
 }
 
 
-//No recipe message
+/* No recipe message */
 .no_recipe_message{
     display: none;
     @include container;

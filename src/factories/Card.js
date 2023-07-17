@@ -1,40 +1,40 @@
 // import { recipes } from "./data/recipe.js";
 
-export default class RecipeCard{
-    constructor(data) {
-        this.id = data.id;
-        this.image = data.image;
-        this.name = data.name;
-        this.time = data.time;
-        this.ingredients = data.ingredients;
-        this.ingredient = data.ingredient;
-        this.quantity = data.quantity;
-        this.quantite = data.quantite;
-        this.unit = data.unit;
-        this.unite = data.unite;
-        this.description = data.description;
-      }
+function recipeCard(data){
+    const {
+        id,
+        image,
+        name,
+        time,
+        ingredients,
+        ingredient,
+        quantity,
+        quantite,
+        unit,
+        unite,
+        description,
+      } = data
 
-     RecipeCardDOM() {
+     function recipeCardDOM() {
 
       let wrapper = document.createElement("div");
       wrapper.classList.add("card")
       // wrapper = "";
-      wrapper.innerHTML =   `<div class="recipe_card" data-id="${this.id}"></div>`
+      wrapper.innerHTML =   `<div class="recipe_card" data-id="${id}"></div>`
 
         let elementCard = "";
         elementCard +=`
         <div class="recipe_card">
                 <figure class="recipe_image">
-                    <img src="/assets/img_recettes/${this.image}" alt="">
-                    <span class="prep_time">${this.time}min</span>
+                    <img src="/assets/img_recettes/${image}" alt="">
+                    <span class="prep_time">${time}min</span>
                 </figure>
                 <div class="content_container">
-                    <h3 class="recipe_title">${this.name}</h3>
+                    <h3 class="recipe_title">${name}</h3>
 
                     <h4 class="recipe">Recette</h4>
 
-                    <p class="recipe_desc">${this.description}</p>
+                    <p class="recipe_desc">${description}</p>
 
                     <h4 class="ingredients">Ingredients</h4>
 
@@ -69,6 +69,19 @@ export default class RecipeCard{
           wrapper.innerHTML = elementCard;
           return wrapper;
     }
+
+    return {
+      id,
+      name,
+      time,
+      ingredient,
+      ingredients,
+      quantity,
+      quantite,
+      unit,
+      unite,
+      recipeCardDOM,
+    };
 
 
 }

@@ -329,6 +329,67 @@ table {
           transform: rotateX(180deg);
 }
 
+#mini-tags {
+  margin-top: 20px;
+  max-width: 1205px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 10px;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+@media screen and (max-width: 1233px) {
+  #mini-tags {
+    max-width: 940px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  #mini-tags {
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  #mini-tags {
+    max-width: 90%;
+  }
+}
+
+.tag-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: relative;
+  width: 179px;
+  padding: 20px 0;
+  border: none;
+  border-radius: 11px;
+  background: #ffd15b;
+  font-size: 14px;
+  font-weight: 400;
+  color: black;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition: width 0.2s ease-in-out;
+  pointer-events: none;
+}
+
+.tag-button .fa-xmark {
+  font-size: 16px;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
 .header {
   position: relative;
   display: -webkit-box;
@@ -433,9 +494,32 @@ main {
 }
 
 main .tag_nav {
-  padding: 20px 0 55px 0;
+  padding: 20px 0 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
+main .tag_nav .recipe_number {
+  color: #1B1B1B;
+  font-size: 21px;
+  font-family: "Anton", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.hide {
+  display: none;
+}
+
+/* CARD COMPONENT */
 .cards_bloc .recipe_card {
   max-width: 23.75rem;
   -webkit-box-shadow: 0px 4px 34px 30px rgba(0, 0, 0, 0.04);
@@ -539,10 +623,12 @@ main .tag_nav {
   color: #7A7A7A;
 }
 
+/* RECIPE BLOC LAYOUT */
 .cards_bloc {
   padding-bottom: 7.5rem;
   max-width: 1205px;
   margin: 0 auto;
+  margin-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -578,6 +664,7 @@ main .tag_nav {
   }
 }
 
+/* No recipe message */
 .no_recipe_message {
   display: none;
   max-width: 1205px;

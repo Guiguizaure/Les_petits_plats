@@ -1,15 +1,14 @@
 //reset all arrays
-
-export let listMiniTags = [];
-export let results = [];
-export let resultRecipesMiniTags = [];
-export let recipesWithRepetition = [];
-export let totalRecipesMiniTags = [];
-export let resultRecipesMultipleMiniTags = [];
-export let uniqueValues = [];
-export let finalResultTotalMiniTags = [];
-export let resultsRecipes = [];
-export let totalMiniTags = [];
-export let researchToLowerCase;
-export let mixAll;
-export let valueLowCase;
+let listMiniTags = [];
+let results = [];
+let resultRecipesMiniTags = [];
+let recipesWithRepetition = [];
+let totalRecipesMiniTags = [];
+let resultRecipesMultipleMiniTags = [];
+let uniqueValues = [];
+let finalResultTotalMiniTags = [];
+let resultsRecipes = [];
+let totalMiniTags = [];
+let researchToLowerCase;
+let mixAll;
+let valueLowCase;
